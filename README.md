@@ -1,17 +1,17 @@
 TestBunche for Image Digit recognition
 =======================================
 
-Use the images in the folder 'img_digit_initial'to generate digit images with a fixed resolution and a set of parametres(Noise,Blur,rotation,....) that we need to specify in 'Param_file.txt' ,the generated images are put in a corresponding subfolder in the folder 'Test', next they are run in our chosen prediction script automatically (testbunche_original.py/testbunche_class.py/testbunche_conv.py/testbunche_final.py) to finally generates statistiques in the file 'Statistique_general.txt'.
+Use the images in the folder 'img_digit_initial'to generate digit images with a fixed resolution and a set of parametres(Noise,Blur,rotation,....) that we need to specify in 'Param_file.txt' ,the generated images are put in a corresponding subfolder in the folder 'Test', next they are run in our chosen prediction script automatically (that you will specify in 'param_file.txt') to finally generates statistiques in the file 'Statistique_general.txt'.
 
 Folders
 ========
 
 ##img_digit_initial
 
-Contains the initial digit images ,to wich we are gonna apply different effects , and downsampling 
+you need to create this folder and put in it digit images named form 0 to 9 ,to wich we are gonna apply different effects and downsampling 
 
 ##Test
-
+you need to create this folder too 
 Contains the generated images after applying parametres and downsampling
 
 scripts
