@@ -1,10 +1,11 @@
 [parametre]
 ################################################################# version du script utilisé #####################################################################
 
-nom de la version du script = testbunche_final.py
+nom de la version du script = 0
 
     #donner le nom du script qui sera utilisé pour effectuer les tests 
-    #les scripts compatible avec BancTest.py sont 'testbunche_original.py'-'testbunche_conv.py'-'testbunche_final.py'-'testbunche_class.py'
+    #le script qui sera utilisé devra prendre 'the path to the image' comme input et comme output il devra donner le digit predit strictement
+    #'0' veut dire que l'algo ne fera que modifier les images et les enregistré dans le fichier Test
      
 ################################################################# BLUR ############################################################################################
 
