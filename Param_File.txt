@@ -1,0 +1,72 @@
+[parametre]
+################################################################# version du script utilisé #####################################################################
+
+nom de la version du script = testbunche_final.py
+
+    #donner le nom du script qui sera utilisé pour effectuer les tests 
+    #les scripts compatible avec BancTest.py sont 'testbunche_original.py'-'testbunche_conv.py'-'testbunche_final.py'-'testbunche_class.py'
+     
+################################################################# BLUR ############################################################################################
+
+blur(taille_du_filtre_en_pixel) = 0
+
+    #size : corespospond a la taille de la matrice kernel(en pixel)(matrice uniforme de valeur 1/size²) ,on convolue cette matrice avec un rectangle de la meme 
+    #taille sur l'image et on prend simplement la somme de tous les pixels dans la zone du noyau et on remplace l'élément central par cette somme.
+    #Pour ne pas ajouter de flou , metre la valeur a 0
+
+############################################################ HISTOGRAME #########################################################################################
+
+Gestion d histogramme(bins,range[x,y]) = 0,0,0
+
+    #bins est le nombre de division qu'on va appliquer sur l'histograme , en gros le nombre de repartition
+    #range est la taille du nouveau histogramme , avec x < y , le range doit etre entre 0 et 255
+    #Pour ne pas modifier l'histograme , mettre  bins =0  
+
+############################################################# BRUIT #############################################################################################
+
+gaussian noise(variance dans [0.001,0.01]) = 0
+
+    #brtuit gaussien additive.le bruit prend des valeurs aleatoires qui suivent une distribution gaussienne avec une moyenne=0 et variance à specifier.
+    #variance est une mesure servant à caractériser la dispersion d'échantillon,elle indique de quelle manière la variable aléatoire se disperse autour de sa moyenne
+    #pour des raison de clareté d'image dans le test des digits ,  la variance doit être prise entre 0.001 et 0.01
+    #Pour ne pas ajouter de bruit , metre la valeur a 0 
+  
+########################################################### FLOU OPTIQUE #######################################################################################
+
+flou optique(taille_filtre_en_pixel) = 8
+    
+    #On applique un multidiemnsionnel filtre gaussien sur l'image, on doit donner la taille de ce filtre en pixel, le meme que le flou normal , mais a la place d'un
+    #kernel contenant des valeur uniformes , on utilise un kernel gaussien
+    #Pour ne pas ajouter de flou , metre la valeur a 0
+
+########################################################### ROTATION ##########################################################################################
+
+image rotaion(angle de rotation) = 0
+
+    #on applique une rotation sur l'images, pour ces tests,c'est preferable de garder l'angle de rotation entre 10 et -10 degré maximum  
+    #Pour ne pas ajouter de rotation , metre la valeur a 0   
+  
+########################################################## MOTION BLUR #######################################################################################
+
+motion_blur(taille_du_filtre_en_pixel,angle) = 0,0
+
+    #size en pixel correnspond a la taille de la matrice kernel.On utilise un filtre de motion blur horizontal , on lui fait une rotation avec l'angle donné 
+    #et on lui l'applique sur l'image pour avoir l'effet desiré, l'angle doit etre donné en degré
+    #sizes=0 or 1 coresponds to no blur    
+
+######################################################### NOMBRE D'IMAGE PAR RESOLUTION USUEL ################################################################
+
+nombre d'image par resolution(7x11, 6x9, 5x8, 4x6, 3x4, 2x3)(dans l'ordre) = 1,1,1,0,0,0
+########################################################### CUSTOMIZER VOTRE PROPRE RESOLUTON ##############################################################
+
+[customaize image resolution]
+
+largeur de l'image(en pixel) = 3,7,6,5,6,9,6,8,2,5,8,10
+
+hauteur de l'image(en pixel) = 5,13,9,8,13,15,7,9,4,7,13,12
+
+______nombre d'image________ = 0,0,0,0,0,0,0,0,0,0,0,0
+
+    #Chaque colone constitue une resolution d'image (largeur,hauteur,nombre d'image de cette taille)
+    #vous pouvez ajouter des colones en les intercallant avec des vergules(comme montré ci-dessus)
+

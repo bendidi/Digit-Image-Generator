@@ -1,0 +1,50 @@
+[Statistique general des tests]
+nombre des tests effectués jusqu'à present = 30
+pourcentage total prediction = [100.0, 100.0, 100.0, 100.0, 100.0, 89.67, 100.0, 96.55, 100.0, 100.0]
+-------------------------------------- =    0|    1|   2|   3|   4|   5|   6|   7|   8|   9|
+pourcentage of prediction of 0 as(0,9) = [100.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+pourcentage of prediction of 1 as(0,9) = [0.0, 100.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+pourcentage of prediction of 2 as(0,9) = [0.0, 0.0, 100.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+pourcentage of prediction of 3 as(0,9) = [0.0, 0.0, 0.0, 100.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+pourcentage of prediction of 4 as(0,9) = [0.0, 0.0, 0.0, 0.0, 100.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+pourcentage of prediction of 5 as(0,9) = [0.0, 0.0, 0.0, 0.0, 0.0, 89.67, 10.33, 0.0, 0.0, 0.0]
+pourcentage of prediction of 6 as(0,9) = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 100.0, 0.0, 0.0, 0.0]
+pourcentage of prediction of 7 as(0,9) = [0.0, 0.0, 0.0, 3.45, 0.0, 0.0, 0.0, 96.55, 0.0, 0.0]
+pourcentage of prediction of 8 as(0,9) = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 100.0, 0.0]
+pourcentage of prediction of 9 as(0,9) = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 100.0]
+
+[reverse stats]
+if 0 is predicted then original is: = [99.99, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+if 1 is predicted then original is: = [0.0, 99.99, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+if 2 is predicted then original is: = [0.0, 0.0, 99.99, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+if 3 is predicted then original is: = [0.0, 0.0, 0.0, 96.66, 0.0, 0.0, 0.0, 3.33, 0.0, 0.0]
+if 4 is predicted then original is: = [0.0, 0.0, 0.0, 0.0, 99.99, 0.0, 0.0, 0.0, 0.0, 0.0]
+if 5 is predicted then original is: = [0.0, 0.0, 0.0, 0.0, 0.0, 99.99, 0.0, 0.0, 0.0, 0.0]
+if 6 is predicted then original is: = [0.0, 0.0, 0.0, 0.0, 0.0, 9.36, 90.63, 0.0, 0.0, 0.0]
+if 7 is predicted then original is: = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 99.99, 0.0, 0.0]
+if 8 is predicted then original is: = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 99.99, 0.0]
+if 9 is predicted then original is: = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 99.99]
+
+[Comment lire le tableau]
+1 = Ce tableau est lis de la maniere suivante le pourcentage de prediction de 0 est de X en tant que 0 , X en tant que 1 , X en tant que 2 .....
+2 = Le tableau est lis ligne par ligne 
+3 = La diagonal represente le pourcentage de la prediction correct de chaque digit
+4 = pour reset les statistique veillez mettre le nombre de test effectué jusqu'a present a 0
+
+[Parametre du dernier test du 07-09-2016--17:21:26]
+nombre total d image pour chaque digit = 2
+flou optique(taille_filtre_en_pixel) = 8
+
+[Resultat du dernier test du 07-09-2016--17:21:26]
+prediction des images du digit 0 = 0
+prediction des images du digit 1 = 1
+prediction des images du digit 2 = 2
+prediction des images du digit 3 = 3
+prediction des images du digit 4 = 4
+prediction des images du digit 5 = 6
+prediction des images du digit 6 = 6
+prediction des images du digit 7 = 7
+prediction des images du digit 8 = 8
+prediction des images du digit 9 = 9
+nombre de digit correctement predit = 9
+
