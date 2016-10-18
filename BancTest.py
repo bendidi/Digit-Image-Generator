@@ -259,7 +259,7 @@ if __name__=='__main__':
     os.chdir(os.getcwd()+'/..') ## return to tests file
     os.chdir(os.getcwd()+'/..') ## return to TestBunche
     os.chdir(os.getcwd()+'/..') ## return to verfin
-    if 1==1:
+    if int(path)!=0:
         output = qx(['python', path,'-i','/home/ouail/ver_fin/TestBunche/Tests/'+path+'/[{}]/'.format(t)])
         a=[]
         print(output)
