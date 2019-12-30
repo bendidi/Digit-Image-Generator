@@ -1,4 +1,4 @@
-TestBunche for Image Digit recognition
+TestBunch for Image Digit recognition
 =======================================
 
 Use the images in the folder 'img_digit_initial'to generate digit images with a fixed resolution and a set of parametres(Noise,Blur,rotation,....) that we need to specify in 'Param_file.txt' ,the generated images are put in a corresponding subfolder in the folder 'Test', next they are run in our chosen prediction script automatically (that you will specify in 'param_file.txt') to finally generates statistiques in the file 'Statistique_general.txt'.
